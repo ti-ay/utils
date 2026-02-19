@@ -1,0 +1,11 @@
+[package]
+name = #{crate_name}
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# tokio = { workspace = true }
+# serde = { workspace = true }
+# serde_json = { workspace = true }
+# color-eyre = { workspace = true }
+# rand = { workspace = true }
