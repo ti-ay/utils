@@ -3,8 +3,15 @@
 version = 4
 
 [[package]]
-name = "debug"
+name = "print_msg"
 version = "0.1.0"
+
+[[package]]
+name = "print_note_test"
+version = "0.1.0"
+dependencies = [
+ "print_msg",
+]
 
 [[package]]
 name = "time_it"
@@ -14,6 +21,5 @@ version = "1.0.0"
 name = "time_it_test"
 version = "0.1.0"
 dependencies = [
- "debug",
  "time_it",
 ]

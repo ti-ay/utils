@@ -1,11 +1,12 @@
 [package]
-name = "time_it_test"
+name = "print_msg"
 version.workspace = true
 edition.workspace = true
 
 [features]
 default = []
-print_time = ["time_it/enable_timing"]
+enable_note = []
+disable_note = []
 
 [dependencies]
 # tokio = { workspace = true }
@@ -13,6 +14,3 @@ print_time = ["time_it/enable_timing"]
 # serde_json = { workspace = true }
 # color-eyre = { workspace = true }
 # rand = { workspace = true }
-
-time_it = { workspace = true}
-# print_msg = { workspace = true }

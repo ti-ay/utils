@@ -1,9 +1,10 @@
 [workspace]
 resolver = "3"
 members = [
-    "libs/debug",
     "libs/time_it",
     "apps/time_it_test",
+    "libs/print_msg",
+    "apps/print_note_test",
     #{member_tag}
 ]
 
@@ -20,7 +21,8 @@ edition = "2024"
 # color-eyre = "0.6"
 # rand = "0.10.0"
 
-debug = { path = "libs/debug" }
 time_it = { path = "libs/time_it" }
 time_it_test = { path = "apps/time_it_test" }
+print_msg = { path = "libs/print_msg" }
+print_note_test = { path = "apps/print_note_test" }
 #{depend_tag}
