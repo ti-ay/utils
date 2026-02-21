@@ -5,3 +5,15 @@ version = 4
 [[package]]
 name = "debug"
 version = "0.1.0"
+
+[[package]]
+name = "time_it"
+version = "1.0.0"
+
+[[package]]
+name = "time_it_test"
+version = "0.1.0"
+dependencies = [
+ "debug",
+ "time_it",
+]

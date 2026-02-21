@@ -2,6 +2,8 @@
 resolver = "3"
 members = [
     "libs/debug",
+    "libs/time_it",
+    "apps/time_it_test",
     #{member_tag}
 ]
 
@@ -19,4 +21,6 @@ edition = "2024"
 # rand = "0.10.0"
 
 debug = { path = "libs/debug" }
+time_it = { path = "libs/time_it" }
+time_it_test = { path = "apps/time_it_test" }
 #{depend_tag}
