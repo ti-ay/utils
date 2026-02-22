@@ -1,7 +1,19 @@
 [package]
-name = "print_inspect_test"
+name = "ut"
 version.workspace = true
 edition.workspace = true
+
+[features]
+default = []
+
+view_on = []
+view_off = []
+
+note_on = []
+note_off = []
+
+time_on = []
+time_off = []
 
 [dependencies]
 # tokio = { workspace = true }
@@ -9,6 +21,3 @@ edition.workspace = true
 # serde_json = { workspace = true }
 # color-eyre = { workspace = true }
 # rand = { workspace = true }
-
-print_msg = { workspace = true }
-# time_it = { workspace = true }

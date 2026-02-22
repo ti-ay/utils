@@ -3,30 +3,13 @@
 version = 4
 
 [[package]]
-name = "print_inspect_test"
-version = "0.1.0"
-dependencies = [
- "print_msg",
-]
-
-[[package]]
 name = "print_msg"
 version = "0.1.0"
-
-[[package]]
-name = "print_note_test"
-version = "0.1.0"
-dependencies = [
- "print_msg",
-]
 
 [[package]]
 name = "time_it"
 version = "1.0.0"
 
 [[package]]
-name = "time_it_test"
+name = "ut"
 version = "0.1.0"
-dependencies = [
- "time_it",
-]
