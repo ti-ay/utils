@@ -33,7 +33,7 @@ macro_rules! inspect {
 #[inline(always)]
 pub fn __internal_print_inspect<T>(_desc: &str, _value: T)
 where
-    T: std::fmt::Display,
+    T: std::fmt::Debug,
 {
     #[cfg(all(feature = "enable_inspect", feature = "disable_inspect"))]
     {
@@ -43,6 +43,6 @@ where
     }
     #[cfg(all(feature = "enable_inspect", not(feature = "disable_inspect")))]
     {
-        println!("[INSPECT] \"{}\" => {}", _desc, _value);
+        println!("[INSPECT] \"{}\" => {:?}", _desc, _value);
     }
 }
