@@ -5,6 +5,7 @@ members = [
     "apps/time_it_test",
     "libs/print_msg",
     "apps/print_note_test",
+    "apps/print_inspect_test",
     #{member_tag}
 ]
 
@@ -25,4 +26,5 @@ time_it = { path = "libs/time_it" }
 time_it_test = { path = "apps/time_it_test" }
 print_msg = { path = "libs/print_msg" }
 print_note_test = { path = "apps/print_note_test" }
+print_inspect_test = { path = "apps/print_inspect_test" }
 #{depend_tag}

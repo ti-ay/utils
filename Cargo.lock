@@ -3,6 +3,13 @@
 version = 4
 
 [[package]]
+name = "print_inspect_test"
+version = "0.1.0"
+dependencies = [
+ "print_msg",
+]
+
+[[package]]
 name = "print_msg"
 version = "0.1.0"
 
