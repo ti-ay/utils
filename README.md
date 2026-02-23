@@ -24,7 +24,7 @@ If macros are disables, then they are entirely stripped from the binary.
 
 * **Global Toggles:**
     * `ut_on`: Enables all macros.
-    * `ut_off`: Disables all macros.
+    * `ut_off`: Disables all macros (Default / no features set).
 * **Group Toggles:**
     * `dbg_on` / `dbg_off`: Controls `view`, `time`, and `note`.
     * `out_on` / `out_off`: Controls `out` and `outln`.
