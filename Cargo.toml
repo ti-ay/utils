@@ -1,8 +1,6 @@
 [workspace]
 resolver = "3"
 members = [
-    "libs/time_it",
-    "libs/print_msg",
     "libs/ut",
     #{member_tag}
 ]
@@ -20,6 +18,5 @@ edition = "2024"
 # color-eyre = "0.6"
 # rand = "0.10.0"
 
-time_it = { path = "libs/time_it" }
 ut = { path = "libs/ut" }
 #{depend_tag}
