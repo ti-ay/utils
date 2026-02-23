@@ -59,7 +59,7 @@ pub fn __internal_print_out(_args: std::fmt::Arguments, _newline: bool) {
     #[cfg(all(feature = "out_on", feature = "out_off"))]
     {
         compile_error!(
-            "Cannot use both 'out_on' and 'out_off' for macro 'ut_out'"
+            "Cannot use both 'out_on' and 'out_off' for macro 'ut_out'/'ut_outln'"
         );
     }
     
