@@ -14,18 +14,18 @@
 ///
 /// ### Examples
 /// ```ignore
-/// use ut::time;
-/// let _ = time!(fib(40));
+/// use ut::ut_time;
+/// let _ = ut_time!(fib(40));
 /// // [TIME] [fib(40)] took: 570 ms
-/// let _ = time!("Fibonacci of 40", fib(40));
+/// let _ = ut_time!("Fibonacci of 40", fib(40));
 /// // [TIME] [Fibonacci of 40] took: 570 ms
 /// ```
 #[macro_export]
-macro_rules! time {
+macro_rules! ut_time {
     ($label:expr ,$code:expr) => {{ $crate::time::__internal_variable_print_time($label, || $code) }};
 
     ($code:expr) => {
-        $crate::time!(stringify!($code), $code)
+        $crate::ut_time!(stringify!($code), $code)
     };
 }
 
@@ -36,7 +36,7 @@ where
 {
     #[cfg(all(feature = "time_on", feature = "time_off"))]
     compile_error!(
-        "Cannot use both 'time_on' and 'time_off' for macro 'time'"
+        "Cannot use both 'time_on' and 'time_off' for macro 'ut_time'"
     );
 
     #[cfg(all(feature = "time_on", not(feature = "time_off")))]

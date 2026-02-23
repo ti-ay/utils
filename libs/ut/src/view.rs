@@ -13,20 +13,20 @@
 ///
 /// ### Examples
 /// ```ignore
-/// use ut::view;
-/// view!("This is a test", 5);
+/// use ut::ut_view;
+/// ut_view!("This is a test", 5);
 /// // [VIEW] "This is a test" => 5
-/// view!(5);
+/// ut_view!(5);
 /// // [VIEW] "5" => 5
 /// ```
 #[macro_export]
-macro_rules! view {
+macro_rules! ut_view {
     ($desc:expr, $val: expr) => {
         $crate::view::__internal_print_view($desc, $val);
     };
 
     ($val: expr) => {
-        $crate::view!(stringify!($val), $val);
+        $crate::ut_view!(stringify!($val), $val);
     };
 }
 
@@ -38,7 +38,7 @@ where
     #[cfg(all(feature = "view_on", feature = "view_off"))]
     {
         compile_error!(
-            "Cannot use both 'view_on' and 'view_off' for macro 'view'"
+            "Cannot use both 'view_on' and 'view_off' for macro 'ut_view'"
         );
     }
     #[cfg(all(feature = "view_on", not(feature = "view_off")))]

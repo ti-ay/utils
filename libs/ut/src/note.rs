@@ -12,12 +12,12 @@
 /// ```
 /// ### Examples
 /// ```ignore
-/// use ut::note;
-/// note!("Hello world!");
+/// use ut::ut_note;
+/// ut_note!("Hello world!");
 /// // [NOTE] Hello world!
 /// ```
 #[macro_export]
-macro_rules! note {
+macro_rules! ut_note {
     ($($args:tt)*) => {
         $crate::note::__internal_print_note(format_args!($($args)*));
     };
@@ -26,7 +26,7 @@ macro_rules! note {
 #[inline(always)]
 pub fn __internal_print_note(_args: std::fmt::Arguments) {
     #[cfg(all(feature = "note_on", feature = "note_off"))]
-    compile_error!("Cannot use both 'note_on' and 'note_off' for the macro 'note'");
+    compile_error!("Cannot use both 'note_on' and 'note_off' for the macro 'ut_note'");
 
     #[cfg(all(feature = "note_on", not(feature = "note_off")))]
     {

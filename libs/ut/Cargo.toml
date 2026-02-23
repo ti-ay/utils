@@ -6,6 +6,9 @@ edition.workspace = true
 [features]
 default = []
 
+ut_on = ["view_on", "note_on", "time_on"]
+ut_off = ["view_off", "note_off", "time_off"]
+
 view_on = []
 view_off = []
 
