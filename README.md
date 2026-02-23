@@ -54,7 +54,7 @@ fn main() {
 ```bash
 cargo run -p bin1 -F ut/ut_on
 ```
-```bash
+```
 [NOTE] Starting heavy computation
 [VIEW] "val" => 165580141
 [TIME] [{ let val = fib(40); ut_view!(val); val }] took: 430 ms
