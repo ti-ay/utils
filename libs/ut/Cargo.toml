@@ -1,6 +1,6 @@
 [package]
 name = "ut"
-version.workspace = true
+version = "0.2.0"
 edition.workspace = true
 
 [features]
@@ -25,8 +25,3 @@ out_on = []
 out_off = []
 
 [dependencies]
-# tokio = { workspace = true }
-# serde = { workspace = true }
-# serde_json = { workspace = true }
-# color-eyre = { workspace = true }
-# rand = { workspace = true }
