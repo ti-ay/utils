@@ -2,6 +2,7 @@
 
 /// Prints the value with a description or the code itself.
 /// Default is disabled.
+/// Prints to stderr.
 /// 
 /// ### Setup
 /// ```toml

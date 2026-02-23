@@ -3,6 +3,7 @@
 
 /// Prints the time it took to execute a code block with a variable metric from seconds to microseconds.
 /// Default is disabled.
+/// Prints to stderr.
 /// 
 /// ### Setup
 /// ```toml

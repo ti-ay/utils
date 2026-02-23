@@ -2,6 +2,7 @@
 
 /// Prints a message with a prefix.
 /// Default is disabled.
+/// Prints to stderr.
 ///
 /// ### Setup
 /// ```toml

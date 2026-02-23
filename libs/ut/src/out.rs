@@ -1,6 +1,6 @@
 //! Holds the internal method [`crate::out::__internal_print_out`].
 
-/// Prints a message without a newline.
+/// Prints a message without a newline to stdout.
 /// After the message stdout is flushed.
 /// Default is disabled.
 /// 
@@ -27,7 +27,7 @@ macro_rules! ut_out {
 }
 
 
-/// Prints a message with a newline.
+/// Prints a message with a newline to stdout.
 /// After the message stdout is flushed.
 /// Default is disabled.
 /// 
