@@ -6,8 +6,11 @@ edition.workspace = true
 [features]
 default = []
 
-ut_on = ["view_on", "note_on", "time_on"]
-ut_off = ["view_off", "note_off", "time_off"]
+ut_on = ["view_on", "note_on", "time_on", "out_on"]
+ut_off = ["view_off", "note_off", "time_off", "out_off"]
+
+dbg_on = ["view_on", "note_on", "time_on"]
+dbg_off = ["view_off", "note_off", "time_off"]
 
 view_on = []
 view_off = []
@@ -17,6 +20,9 @@ note_off = []
 
 time_on = []
 time_off = []
+
+out_on = []
+out_off = []
 
 [dependencies]
 # tokio = { workspace = true }
